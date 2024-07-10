@@ -110,7 +110,7 @@ No hace falta conectarse a una base de datos para correr los tests porque crea u
 
 Para ejecutar correctamente este proyecto, necesita agregar las siguientes variables de entorno:
 
-`POSTGRES_DSN`: URI para conectarse a la base de datos, en el ambiente de testing no hace falta ya que ejecuta una base de datos SQLite3 en memoria, si está ejecutando la aplicacion en local o en un ambiente de testing, puede utilizar el archivo `.env.local` y apuntar a una base de datos PostgreSQL
+`POSTGRES_DSN`: URI para conectarse a la base de datos, en el ambiente de testing no hace falta ya que ejecuta una base de datos SQLite3 en memoria, si está ejecutando la aplicacion en local o en un ambiente de testing, puede utilizar el archivo `.env.local` y apuntar a una base de datos PostgreSQL, el archivo `.env.local` ya esta apuntando a una base de datos de prueba en la nube.
 
 `JWT_PRIVATE_KEY`: Frase para la firma de los tokens JWT, si o si se necesita para cualquier ambiente, si esta en el ambiente local o de testing, puede utilizar el archivo `.env.local`
 
