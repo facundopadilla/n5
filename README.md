@@ -90,6 +90,15 @@ docker-compose up --build
 ```
 La aplicación estará disponible en http://localhost:8000
 
+## Ejecutar las migraciones con `alembic`
+
+Para aplicar las migraciones incrementales de bases de datos, ejecute
+
+```sh
+alembic upgrade head
+```
+**Nota**: utiliza la variable de entorno `POSTGRES_DSN`, en un ambiente de testing no hace falta utilizar `alembic`, si necesita aplicar los esquemas en una base de datos de prueba, va a necesitar linkear una URI
+
 ## Ejecutar los tests
 Los tests estan creados con `pytest`, para ejecutar todos los tests, ejecute el siguiente comando:
 ```sh
